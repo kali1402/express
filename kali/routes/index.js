@@ -12,6 +12,7 @@ router.get('/login', function(req, res, next) {
     res.render('login', { title: '로그인' });
 });
 
+// 영화 페이지
 router.get('/god', function(req, res, next) {
   if(req.session.ID && req.session.PW) {
     const params = {
